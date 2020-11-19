@@ -96,6 +96,27 @@ h1 span {
   color: #ff0000;
 }
 
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  color: #1f1f1f;
+}
+
+h2 span {
+  font-size: 30px;
+  color: #ff0000;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #424242;
+}
+
 @media (max-width: 939px) {
   .marking {
     max-width: 100%;
@@ -209,6 +230,9 @@ header .marking nav ul .nav__link:hover:before {
 
 @media (max-width: 480px) {
   header {
+    position: relative;
+    top: 0;
+    left: 0;
     background-image: url(../img/intro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -280,4 +304,34 @@ header .marking nav ul .nav__link:hover:before {
   .intro {
     display: none;
   }
+}
+
+.work {
+  padding: 40px 0px 40px 0px;
+}
+
+.work .work__card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 40px;
+}
+
+.work .work__card .work__card__img-box {
+  width: 10%;
+  margin-right: 50px;
+}
+
+.work .work__card .work__card__img-box .work_card_img {
+  width: 100%;
+  display: block;
+}
+
+.work .work__card .text {
+  width: 100%;
+  text-align: justify;
 }
