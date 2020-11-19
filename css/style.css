@@ -186,6 +186,12 @@ header .marking nav ul .nav__link {
 }
 
 @media (max-width: 480px) {
+  header {
+    background-image: url(../img/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
   header .marking nav {
     width: 100%;
   }
@@ -204,8 +210,10 @@ header .marking nav ul .nav__link {
 
 .intro {
   max-width: 100%;
-  min-height: 70vh;
+  min-height: 75vh;
   background: url(../img/intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top;
 }
 
@@ -213,7 +221,7 @@ header .marking nav ul .nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 70vh;
+  min-height: 75vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -228,6 +236,7 @@ header .marking nav ul .nav__link {
 
 .intro .marking .intro__sub {
   width: 100%;
+  font-family: 'Merienda One', cursive;
   text-align: center;
   font-size: 1.5em;
   font-style: italic;
@@ -238,16 +247,15 @@ header .marking nav ul .nav__link {
 
 @media (max-width: 769px) {
   .intro {
-    min-height: 50vh;
-    padding: 100px 0px 0px 0px;
+    min-height: 400px;
   }
   .intro .marking {
-    min-height: 50vh;
+    min-height: 400px;
   }
 }
 
 @media (max-width: 480px) {
-  .intro .marking {
-    padding: 150px 0px 0px 0px;
+  .intro {
+    display: none;
   }
 }

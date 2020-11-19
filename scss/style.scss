@@ -111,18 +111,27 @@ header .marking {
 }
 
 @media (max-width:480px) {
-    header .marking nav {
-        width: 100%;
+    header {
 
-        ul {
-            flex-direction: column;
+        background-image: url(../img/intro.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
 
-            .nav__link {
-                display: block;
-                text-align: center;
-                padding: 10px 0px 10px 0px;
+        .marking nav {
+            width: 100%;
+    
+            ul {
+                flex-direction: column;
+    
+                .nav__link {
+                    display: block;
+                    text-align: center;
+                    padding: 10px 0px 10px 0px;
+                }
             }
         }
+
     }
 }
 //===============================================
@@ -131,19 +140,22 @@ header .marking {
 
 .intro {
     max-width: 100%;
-    min-height: 70vh;
+    min-height: 75vh;
     background: url(../img/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
 
     .marking {
         display: flex;
-        min-height: 70vh;
+        min-height: 75vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .intro__sub {
             width: 100%;
+            font-family: 'Merienda One', cursive;
             text-align: center;
             font-size: 1.5em;
             font-style: italic;
@@ -155,20 +167,29 @@ header .marking {
 }
 
 @media (max-width:769px){
-    
     .intro {
-        min-height: 50vh;
-        padding: 100px 0px 0px 0px;
+        min-height: 400px;
     
         .marking {
-            min-height: 50vh;
+            min-height: 400px;
         }
     }
 }
 
 @media (max-width:480px){
+    .intro {
+
+        display: none;
+        // background-image: none;
+        
+        // .marking  {
+        //     .h1 {
+        //         display: none;
+        //     }
     
-    .intro .marking {
-        padding: 150px 0px 0px 0px;
+        //     .intro__sub {
+        //         display: none;
+        //     }
+        // }
     }
 }
