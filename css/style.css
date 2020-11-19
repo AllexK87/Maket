@@ -239,8 +239,15 @@ header .marking nav ul .nav__link {
 @media (max-width: 769px) {
   .intro {
     min-height: 50vh;
+    padding: 100px 0px 0px 0px;
   }
   .intro .marking {
     min-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro .marking {
+    padding: 150px 0px 0px 0px;
   }
 }
