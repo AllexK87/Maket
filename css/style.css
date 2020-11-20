@@ -335,3 +335,17 @@ header .marking nav ul .nav__link:hover:before {
   width: 100%;
   text-align: justify;
 }
+
+@media (max-width: 480px) {
+  .work .work__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work .work__card .work__card__img-box {
+    width: 20%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}

@@ -237,9 +237,7 @@ header .marking {
     .work__card {
         width: 100%;
         display: flex;
-        
         align-items: center;
-
         padding-bottom: 40px;
         
         .work__card__img-box {
@@ -255,6 +253,18 @@ header .marking {
         .text {
             width: 100%;
             text-align: justify;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .work .work__card {
+        flex-direction: column;
+
+        .work__card__img-box {
+            width: 20%;
+            margin-right: 0px;
+            margin-bottom: 20px;
         }
     }
 }
