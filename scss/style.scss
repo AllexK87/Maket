@@ -44,7 +44,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     font-weight: 700;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     color: #1f1f1f;
 }
 
@@ -104,7 +104,7 @@ header .marking {
     }
 
     nav{
-        width: 63%;
+        width: 50%;
 
         ul {
             display: flex;
@@ -241,7 +241,8 @@ header .marking {
 //===============================================
 
 .work {
-    padding: 50px 0px 100px 0px;
+    padding: 50px 0px 0px 0px;
+    border-bottom: 3px solid #ddd;
     
     .work__card {
         width: 100%;
@@ -283,70 +284,264 @@ header .marking {
 }
 
 //===============================================
-//================ market
+//================ team
 //===============================================
 
+.team {
+    padding: 30px 0px 30px 0px;
+    border-bottom: 3px solid #ddd;
 
-.market {
-    margin-bottom: 50px;
+    .h2 {
+        text-align: center;
+    }
+}
+
+.team__card__box {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-      
 }
-.card {
+
+.team__card {
     width: 30%;
-    margin: 0px 10px 0px 0px;
-    padding-bottom: 30px;
-    background-color: #e9e8e8;
-    border-radius: 10px;
+}
+
+.team__card__img-box {
+    width: 100%;
+}
+
+.team__card__img {
+    width: 100%;
+}
+
+.h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    overflow: hidden;
-
-    box-shadow: 0px 0px 10px #000000;
-    
-    .card__box-img {
-        margin-bottom: 20px;
-
-        .card__img {
-            width: 100%;
-        }
-    }
-
-    .text {
-        padding-bottom: 20px;
-
-    }
-
-    .card__link {
-        display: inline-block;
-        font-size: 18px;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #ffffff;
-        font-style: italic;
-        
-        background: #1a9900;
-        padding: 10px 30px;
-        border-radius: 50px;
-    }
-
-    &:last-child {
-        margin: 0px 0px 0px 0px;
-    }
+}
+.position {
+    color: #ff0000;
+    text-align: center;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
 }
 
-@media (max-width:480px){
-    .market {
+.card__txt {
+    text-align: justify;
+}
+
+@media (max-width:769px) {
+
+    .team__card__box {
         flex-direction: column;
+        align-items: center;
+    }
 
-        .card {
-            width: 80%;
-            margin: 30px auto 30px auto;
+    .team__card {
+        width: 70%;
+        padding-bottom: 30px;
+
+        &:last-child {
+            padding-bottom: 0;
         }
-          
     }
 }
 
+@media (max-width:769px) {
 
+    .team__card {
+        width: 100%;
+    }
+}
+
+//===============================================
+//================ gallery
+//===============================================
+
+.gallery {
+    width: 100%;
+    padding: 30px 0px 100px 0px;
+    
+
+    .h2{
+        text-align: center;
+    }
+}
+
+.gallery__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+
+.gallery__card {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+}
+
+.gallery__cardy__img {
+    position: relative;
+    width: 100%;
+    filter: grayscale(100);
+    transition: filter .5s ease;
+
+    &:hover {
+        filter: grayscale(0);
+        transition: all 1s ease;
+    }
+
+    &:hover~.gallery__card__txt {
+        bottom: 0;
+        transition: all .5s ease;
+    }
+}
+
+.gallery__card__txt {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #424242;
+    text-align: center;
+    color: #ffffff;
+    background-color: #918d8d33;
+
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+
+    transition: all .5s ease;
+}
+
+@media (max-width:769px) {
+    .gallery__card {
+        width: 50%;
+    }
+}
+
+@media (max-width:480px) {
+    .gallery__card {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+//===============================================
+//================ form
+//===============================================
+
+.form{
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px 0px 30px 0px;
+    // border-top: 3px solid #ddd;
+
+    .h2 {
+        text-align: center;
+    }
+
+    .form__br{
+        margin: 0px 0px 15px 0px;
+
+        input{
+            width: 300px;
+            border: 2px solid rgb(185, 184, 184);
+            background: rgb(236, 235, 235);
+            font-size: 14px;
+            padding: 8px;
+
+            &:focus{
+                border: 2px solid #ff0000;
+                background: #fff;
+            }
+        }
+
+        textarea {
+            border: 2px solid rgb(185, 184, 184);
+            background: rgb(236, 235, 235);
+            font-size: 14px;
+            padding: 8px;
+
+            width: 300px;
+            height: 200px;
+
+            &:focus{
+                border: 2px solid #ff0000;
+                background: #fff;
+            }
+        }
+
+        button{
+            width: 300px;
+            padding: 10px 0px;
+            color: rgb(0, 0, 0);
+            background: transparent;
+            border: 2px solid #ff0000;
+            font-weight: 600;
+            font-size: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: color .5s ease;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0%;
+                left: -50%;
+                width: 50%;
+                height: 100%;
+                background: #ff0000;
+                transition: .5s ease;
+                z-index: -1;
+                
+            }
+            
+            &:hover:before {
+                left: 0%;
+                transition: .5s ease;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0%;
+                right: -50%;
+                width: 50%;
+                height: 100%;
+                background: #ff0000;
+                transition: .5s ease;
+                z-index: -1;
+            }
+
+            &:hover:after {
+                right: 0%;
+                transition: .5s ease;
+            }
+            
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.form__box{
+    border-top: 3px solid #ddd;
+}
+
+//===============================================
+//================ footer
+//===============================================
+
+footer{
+    background: rgb(27, 27, 27);
+    padding: 30px 0px 60px 0px;
+
+    .footer__taxt{
+        color: rgb(146, 146, 146);
+        font-size: 12px;
+        text-align: center;
+    }
+}
 
