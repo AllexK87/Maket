@@ -368,27 +368,31 @@ header .marking {
 }
 
 .gallery__box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .gallery__card {
     position: relative;
     width: 25%;
+    max-height: 300px;
     overflow: hidden;
 }
 
 .gallery__cardy__img {
-    position: relative;
     width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
     filter: grayscale(100);
     transition: filter .5s ease;
+    object-fit: cover;
+    object-position: center;
 
     &:hover {
         filter: grayscale(0);
         transition: all 1s ease;
+        cursor: pointer;
     }
 
     &:hover~.gallery__card__txt {
@@ -408,7 +412,7 @@ header .marking {
     background-color: #918d8d33;
 
     position: absolute;
-    bottom: -100%;
+    bottom: -10%;
     left: 0;
 
     transition: all .5s ease;
