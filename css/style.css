@@ -126,6 +126,10 @@ h3 {
   color: #424242;
 }
 
+a {
+  color: #0097fc;
+}
+
 @media (max-width: 939px) {
   .marking {
     max-width: 100%;
@@ -500,7 +504,7 @@ header .marking nav ul .nav__link:hover:before {
   color: #ffffff;
   background-color: #918d8d33;
   position: absolute;
-  bottom: -10%;
+  bottom: -50%;
   left: 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -537,14 +541,14 @@ header .marking nav ul .nav__link:hover:before {
 
 .form .form__br input {
   width: 300px;
-  border: 2px solid #b9b8b8;
+  border-bottom: 2px solid #b9b8b8;
   background: #ecebeb;
   font-size: 14px;
   padding: 8px;
 }
 
 .form .form__br input:focus {
-  border: 2px solid #ff0000;
+  border-bottom: 2px solid red;
   background: #fff;
 }
 
@@ -580,13 +584,15 @@ header .marking nav ul .nav__link:hover:before {
   content: '';
   position: absolute;
   top: 0%;
-  left: -50%;
+  left: -100%;
   width: 50%;
   height: 100%;
   background: #ff0000;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   z-index: -1;
+  -webkit-transform: scale(1.5, 1) skew(50deg, 0deg);
+          transform: scale(1.5, 1) skew(50deg, 0deg);
 }
 
 .form .form__br button:hover:before {
@@ -599,13 +605,15 @@ header .marking nav ul .nav__link:hover:before {
   content: '';
   position: absolute;
   top: 0%;
-  right: -50%;
+  right: -100%;
   width: 50%;
   height: 100%;
   background: #ff0000;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   z-index: -1;
+  -webkit-transform: scale(1.5, 1) skew(50deg, 0deg);
+          transform: scale(1.5, 1) skew(50deg, 0deg);
 }
 
 .form .form__br button:hover:after {
@@ -624,7 +632,19 @@ header .marking nav ul .nav__link:hover:before {
 
 footer {
   background: #1b1b1b;
-  padding: 30px 0px 60px 0px;
+  padding: 10px 0px 30px 0px;
+}
+
+footer .marking .box__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footer__taxt {

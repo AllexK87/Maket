@@ -25,6 +25,7 @@ h1 {
         font-size: 92px;
         color: #ff0000;
     }
+    
 }
 
 h2 {
@@ -54,6 +55,10 @@ h3 {
     font-weight: 400;
     line-height: 1.5em;
     color: #424242;
+}
+
+a {
+    color: rgb(0, 151, 252)
 }
 
 @media (max-width:939px){
@@ -412,7 +417,7 @@ header .marking {
     background-color: #918d8d33;
 
     position: absolute;
-    bottom: -10%;
+    bottom: -50%;
     left: 0;
 
     transition: all .5s ease;
@@ -450,13 +455,13 @@ header .marking {
 
         input{
             width: 300px;
-            border: 2px solid rgb(185, 184, 184);
+            border-bottom: 2px solid rgb(185, 184, 184);
             background: rgb(236, 235, 235);
             font-size: 14px;
             padding: 8px;
 
             &:focus{
-                border: 2px solid #ff0000;
+                border-bottom: 2px solid rgb(255, 0, 0);
                 background: #fff;
             }
         }
@@ -492,12 +497,13 @@ header .marking {
                 content: '';
                 position: absolute;
                 top: 0%;
-                left: -50%;
+                left: -100%;
                 width: 50%;
                 height: 100%;
                 background: #ff0000;
                 transition: .5s ease;
                 z-index: -1;
+                transform: scale(1.5, 1) skew(50deg, 0deg);
                 
             }
             
@@ -510,12 +516,13 @@ header .marking {
                 content: '';
                 position: absolute;
                 top: 0%;
-                right: -50%;
+                right: -100%;
                 width: 50%;
                 height: 100%;
                 background: #ff0000;
                 transition: .5s ease;
                 z-index: -1;
+                transform: scale(1.5, 1) skew(50deg, 0deg);
             }
 
             &:hover:after {
@@ -540,7 +547,13 @@ header .marking {
 
 footer{
     background: rgb(27, 27, 27);
-    padding: 30px 0px 60px 0px;
+    padding: 10px 0px 30px 0px;
+
+    .marking .box__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .footer__taxt{
         color: rgb(146, 146, 146);
@@ -549,3 +562,6 @@ footer{
     }
 }
 
+//===============================================
+//================ keyframes
+//===============================================

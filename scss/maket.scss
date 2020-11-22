@@ -1,68 +1,40 @@
 @import '_nulstyle';
 
-body {
+
+body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 18px;
-    background: rgb(255, 255, 255);
+    color: #fff;
+    background: rgb(29, 28, 28);
 }
 
-.marking {
-    max-width: 800px;
-    margin: 0 auto;
+h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+p {
+    margin: 0px 0px 15px 0px;
+    line-height: 1.5rem;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(3, 109, 3);
+    color: rgb(0, 151, 252)
 }
 
-/*                header
-============================================*/
-
-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(136, 136, 136, 0.548);
-    
-    background-position: top;
-
-    .marking {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        ul{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    }
+.marking {
+    max-width: 940px;
+    margin: auto;
 }
 
-.logo {
-    color: rgb(0, 0, 0);
-    font-size: 1.6em;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: .2em;
-}
-
-
-.nav__link{
-    display: inline-block;
-    padding: 20px 30px 20px 30px;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-    letter-spacing: .1em;
-    opacity: .8;
-    transition: opacity .3s ease-in, color .3s ease;
-
-    &:hover{
-        color: rgb(3, 109, 3);
-        opacity: 1;
-        transition: .3s ease;
-    }
-}
-
+@import 'maket/_header';
+@import 'maket/_page-grid';
