@@ -3,7 +3,7 @@
 ===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 :root {
-  font-size: calc(1vw + 0.2em);
+  font-size: calc(1vw + 0.6em);
 }
 
 *,
@@ -81,8 +81,8 @@ body.lock {
 */
 .header__logo {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 4%;
-          flex: 0 0 4%;
+      -ms-flex: 0 0 6%;
+          flex: 0 0 6%;
 }
 
 .header__logo a img {
@@ -198,7 +198,7 @@ body.lock {
 
 .header__links li .header__link {
   display: inline-block;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;

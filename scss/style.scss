@@ -49,7 +49,7 @@ body
 
 .header__logo 
 {
-    flex: 0 0 4%;
+    flex: 0 0 6%;
     
     a img 
     {
@@ -153,6 +153,7 @@ body
     {
         list-style: none;
         margin-bottom: 3em;
+        
         &:last-child{
             margin-bottom: 0;
         }
@@ -160,7 +161,7 @@ body
         .header__link 
         {
             display: inline-block;
-            font-size: 4rem;
+            font-size: 3rem;
             color: #fff;
             font-weight: 600;
             text-transform: uppercase;
