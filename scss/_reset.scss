@@ -1,0 +1,41 @@
+/*                Обнуление
+==============================================*/
+:root 
+{
+    box-sizing: border-box;
+    font-size: 0.9375em; /* 15px */
+}
+
+*,
+*::after,
+*::before
+{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited,
+a:hover 
+{
+    text-decoration: none;
+}
+
+a:active 
+{
+    color: #b81414;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-size:inherit;
+    font-weight: inherit;
+}
+
+ul li 
+{
+    list-style: none;
+}
+

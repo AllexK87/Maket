@@ -1,0 +1,35 @@
+@import '_reset';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+/*              База
+=====================================*/
+
+body
+{
+    font-family: 'Fira Sans', sans-serif;
+
+    &.lock 
+    {
+        overflow: hidden;
+    }
+}
+
+.container 
+{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+// Цвета
+$color-wheit:#fff;
+$color-blu:#1965bd;
+$color-dark:#000000;
+
+/*              Шапка
+=====================================*/
+@import '_header';
+
+/*              intro
+=====================================*/
+@import '_intro';
