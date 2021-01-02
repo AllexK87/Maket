@@ -2,29 +2,66 @@
 $color-wheit:#fff;
 $color-blu:#1965bd;
 $color-dark:#000000;
+$color-silver:#eeeeee;
 
 .work 
 {
-
+    margin: .5em 0;
 }
+
 .work__title 
 {
     font-size: 3rem;
-    text-align: center;
     color: #252525;
-    margin: 1em 0;
     font-weight: 300;
-    border-bottom: 2px solid #252525;
+    text-align: center;
 }
+
+.work__box 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .work__card 
 {
+    border-radius: .7em;
+    background-color: $color-silver;
+    box-shadow: 0 0 1px #000000;
+    overflow: hidden;
+    margin: 0 0 1.8em 0;
 }
+
 .work__card__img 
 {
+    width: 100%;
+
+    img 
+    {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
 }
+
 .work__card__title 
 {
+    font-size: 1.5rem;
+    color: #000000;
+    padding: .4em 0;
+    text-align: center;
 }
+
 .work__card__link 
 {
+    display: block;
+    font-size: 1rem;
+    color: $color-wheit;
+    padding: .5em 1.2em;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(57, 119, 235);
+    cursor: pointer;
 }

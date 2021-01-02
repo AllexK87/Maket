@@ -354,11 +354,65 @@ p {
 
 /*              work
 =====================================*/
+.work {
+  margin: .5em 0;
+}
+
 .work__title {
   font-size: 3rem;
-  text-align: center;
   color: #252525;
-  margin: 1em 0;
   font-weight: 300;
-  border-bottom: 2px solid #252525;
+  text-align: center;
+}
+
+.work__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work__card {
+  border-radius: .7em;
+  background-color: #eeeeee;
+  -webkit-box-shadow: 0 0 1px #000000;
+          box-shadow: 0 0 1px #000000;
+  overflow: hidden;
+  margin: 0 0 1.8em 0;
+}
+
+.work__card__img {
+  width: 100%;
+}
+
+.work__card__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.work__card__title {
+  font-size: 1.5rem;
+  color: #000000;
+  padding: .4em 0;
+  text-align: center;
+}
+
+.work__card__link {
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+  padding: .5em 1.2em;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #3977eb;
+  cursor: pointer;
 }
