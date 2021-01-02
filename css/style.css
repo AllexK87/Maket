@@ -9,6 +9,19 @@
   /* 15px */
 }
 
+@media (min-width: 320px) {
+  :root {
+    font-size: calc(0.0046875 * 100vw + 13.5px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    font-size: 1.125em;
+    /* 18px */
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -52,6 +65,10 @@ body.lock {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+p {
+  font-weight: 300;
 }
 
 /*              Шапка
@@ -249,6 +266,9 @@ body.lock {
 
 /*              intro
 =====================================*/
+/*
+    intro
+*/
 .intro {
   background-color: #000000;
 }
@@ -290,11 +310,35 @@ body.lock {
     Картинка
 */
 .intro__img {
-  max-width: 50%;
+  max-width: 35%;
 }
 
 .intro__img img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (min-width: 760px) {
+  /*
+        intro
+    */
+  .intro__body {
+    margin: 2.7em 0 0 0;
+    /* высота .header__body */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }

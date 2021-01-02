@@ -3,6 +3,9 @@ $color-wheit:#fff;
 $color-blu:#1965bd;
 $color-dark:#000000;
 
+/*
+    intro
+*/
 .intro 
 {
     background-color: $color-dark;
@@ -25,12 +28,14 @@ $color-dark:#000000;
     color: $color-wheit;
     text-align: center;
 }
+
 .intro__title 
 {
     font-size: 2rem;
     text-transform: uppercase;
     padding: 1em 0;
 }
+
 .intro_subtitle 
 {
     font-weight: 300;
@@ -39,13 +44,30 @@ $color-dark:#000000;
 /*
     Картинка
 */
+
 .intro__img 
 {
-    max-width: 50%;
+    max-width: 35%;
 
     img
     {
         width: 100%;
         object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (min-width:760px)
+{
+    /*
+        intro
+    */
+    .intro__body 
+    {
+         margin: 2.7em 0 0 0; /* высота .header__body */
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+        justify-content: space-around;
     }
 }

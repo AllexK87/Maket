@@ -6,6 +6,28 @@
     font-size: 0.9375em; /* 15px */
 }
 
+
+@media (min-width:320px) 
+{
+    :root 
+    {
+        font-size: calc(0.0046875 * 100vw + 13.5px);
+        // 18px - 15px = 3px
+        // min-width:960px - min-width:320px = 640px
+        // 3px / 640px = 0,0046875 px
+        // 
+        // 15px - 0,0046875 * min-width:320px = 13.5
+    }
+}
+
+@media (min-width:960px) 
+{
+    :root 
+    {
+        font-size: 1.125em; /* 18px */
+    }
+}
+
 *,
 *::after,
 *::before
