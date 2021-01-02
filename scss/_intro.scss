@@ -47,7 +47,7 @@ $color-dark:#000000;
 
 .intro__img 
 {
-    max-width: 35%;
+    max-width: 50%;
 
     img
     {
@@ -69,5 +69,13 @@ $color-dark:#000000;
          flex-direction: row;
          align-items: center;
         justify-content: space-around;
+    }
+
+    /*
+        Картинка
+    */
+    .intro__img 
+    {
+        max-width: 35%;
     }
 }

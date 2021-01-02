@@ -310,7 +310,7 @@ p {
     Картинка
 */
 .intro__img {
-  max-width: 35%;
+  max-width: 50%;
 }
 
 .intro__img img {
@@ -340,5 +340,11 @@ p {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  /*
+        Картинка
+    */
+  .intro__img {
+    max-width: 35%;
   }
 }
