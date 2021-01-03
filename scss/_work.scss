@@ -4,64 +4,106 @@ $color-blu:#1965bd;
 $color-dark:#000000;
 $color-silver:#eeeeee;
 
+/*
+    Work
+*/
 .work 
 {
-    margin: .5em 0;
+    margin: 0 0 2em 0;
+    h2 
+    {
+        text-align: center;
+        padding: 1em 0;
+    }
 }
 
-.work__title 
+
+/*
+    cards
+*/
+.work__cards 
 {
-    font-size: 3rem;
-    color: #252525;
-    font-weight: 300;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.work__box 
+.card 
+{
+    max-width: 100%;
+    margin: 0 0 1.5em 0;
+    box-shadow: 0 0 3px #000000;
+    background-color: rgb(243, 243, 243);
+    overflow: hidden;
+    padding: 1em;
+
+    &:hover .card__imgbx img 
+    {
+        transform: scale(1.2, 1.2);
+        transition: all .3s ease;
+    }
+}
+
+.card__imgbx 
+{
+    width: 100%;
+    overflow: hidden;
+
+    img
+    {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        transition: all .3s ease;
+    }
+}
+.card__content 
 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.work__card 
-{
-    border-radius: .7em;
-    background-color: $color-silver;
-    box-shadow: 0 0 1px #000000;
-    overflow: hidden;
-    margin: 0 0 1.8em 0;
-}
-
-.work__card__img 
-{
-    width: 100%;
-
-    img 
+    h3 
     {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        align-items: center;
+        padding: .5em 0;
     }
 
+    p 
+    {
+        text-align: justify;
+        text-indent: 1em;
+        margin: 0 0 1em 0;
+    }
+
+    a 
+    {
+        font-size: 1rem;
+        padding: 0.5em 1.5em;
+        color: $color-wheit;
+        background-color: $color-blu;
+        cursor: pointer;
+    }
 }
 
-.work__card__title 
+@media (min-width:760px)
 {
-    font-size: 1.5rem;
-    color: #000000;
-    padding: .4em 0;
-    text-align: center;
-}
+    /*
+        cards
+    */
+    .work__cards 
+    {
+        justify-content: space-between;
 
-.work__card__link 
-{
-    display: block;
-    font-size: 1rem;
-    color: $color-wheit;
-    padding: .5em 1.2em;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgb(57, 119, 235);
-    cursor: pointer;
+    }
+
+    .card 
+    {
+        max-width: 49%;
+    }
 }
