@@ -76,6 +76,7 @@ h2 {
   font-weight: 300;
   letter-spacing: 0.3em;
   color: #000000;
+  padding: 1em 0;
 }
 
 /*              Шапка
@@ -87,6 +88,7 @@ h2 {
   width: 100%;
   background-color: #000;
   padding: .3em 0;
+  z-index: 5;
 }
 
 .header__body {
@@ -365,13 +367,8 @@ h2 {
 /*
     Work
 */
-.work {
-  margin: 0 0 2em 0;
-}
-
 .work h2 {
   text-align: center;
-  padding: 1em 0;
 }
 
 /*
@@ -482,4 +479,99 @@ h2 {
 
 .contacts h2 {
   text-align: center;
+}
+
+.contacts__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 3em 0;
+}
+
+.contacts__info p {
+  display: block;
+  font-size: 1.4rem;
+  padding: 0.8em;
+}
+
+.messadge input {
+  border: 1px solid #000;
+  padding: 0.5em;
+  outline: none;
+}
+
+.messadge input:focus {
+  border: 1px solid #b81414;
+}
+
+.messadge textarea {
+  margin: 1em 0 1em 0;
+  border: 1px solid #000;
+  width: 100%;
+  outline: none;
+  padding: 0.5em;
+}
+
+.messadge textarea:focus {
+  border: 1px solid #b81414;
+}
+
+.messadge button {
+  padding: 0.8em 2em;
+  font-size: 1rem;
+}
+
+.button__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button__send {
+  background-color: #1965bd;
+  color: #fff;
+}
+
+.button__reset {
+  background-color: #b81414;
+  color: #fff;
+}
+
+@media (min-width: 760px) {
+  .contacts__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }

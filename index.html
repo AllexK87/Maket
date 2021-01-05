@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Doc</title>
@@ -20,9 +21,9 @@
                 <div class="header__burger"><span></span></div> <!-- Бургер -->
                 <nav class="header__menu">
                     <ul class="header__links">
-                        <li><a href="#" class="header__link">Home</a></li>
-                        <li><a href="#" class="header__link">Our works</a></li>
-                        <li><a href="#" class="header__link">Contacts</a></li>
+                        <li><a href="index.html" class="header__link">Home</a></li>
+                        <li><a href="#work" class="header__link">Our works</a></li>
+                        <li><a href="#contacts" class="header__link">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -47,8 +48,8 @@
         </div>
 
         <div class="container">
-            <div class="work">
-                <h2>Our works</h2>
+            <div class="work" id="work">
+                <h2 >Our works</h2>
 
                 <div class="work__cards">
 
@@ -91,12 +92,49 @@
                         </div>
                     </div>
 
+                    <div class="work__card card">
+                        <div class="card__imgbx">
+                            <img src="img/gallery_4.jpg" alt="">
+                        </div>
+                        <div class="card__content">
+                            <h3>Project four</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt nesciunt, dolorum
+                                numquam quas minus deserunt quae ipsa magni facere tempora molestiae quidem, pariatur
+                                laudantium debitis quia rem ducimus rerum molestias.</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+
                 </div>
 
             </div> <!-- work -->
 
-            <div class="contacts">
+            <div class="contacts" id="contacts">
                 <h2>Contacts</h2>
+                <div class="contacts__body">
+
+                    <div class="contacts__info">
+                        <p class="fas fa-phone-volume"> +1234567890</p>
+                        <p class="far fa-envelope-open"> abc@mail.com</p>
+                        <p class="fab fa-whatsapp"> +1234567890</p>
+                        <p class="fab fa-telegram"> +1234567890</p>
+                    </div>
+    
+                    <form action="" class="messadge" method="POST">
+                        <p>
+                            <input type="text" name="name" id="name" placeholder="Name" maxlength="50">
+                            <input type="email" name="email" id="email" placeholder="email@mail.com">
+                        </p>
+                        <p>
+                            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                        </p>
+                        <div class="button__body">
+                            <button class="button__send">Send</button>
+                            <button class="button__reset" type="reset">Reset</button>
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </div>
     </main>

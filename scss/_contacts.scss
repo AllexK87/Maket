@@ -1,3 +1,10 @@
+// Цвета
+$color-wheit:#fff;
+$color-blu:#1965bd;
+$color-dark:#000000;
+$color-silver:#eeeeee;
+
+
 .contacts 
 {
     margin: 0 0 5em 0;
@@ -5,4 +12,92 @@
     {
         text-align: center;
     }
+}
+
+.contacts__body 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contacts__info 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3em 0;
+    
+    p
+    {
+        display: block;
+        font-size: 1.4rem;
+        padding: 0.8em;
+    }
+}
+
+.messadge 
+{
+    input
+    {
+        border: 1px solid #000;
+        padding: 0.5em;
+        outline: none;
+
+        &:focus
+        {
+            border: 1px solid #b81414;
+        }
+    }
+
+
+    textarea
+    {
+        margin: 1em 0 1em 0;
+        border: 1px solid #000;
+        width: 100%;
+        outline: none;
+        padding: 0.5em;
+        
+        &:focus
+        {
+            border: 1px solid #b81414;
+        }
+    }
+
+    button 
+    {
+        padding: 0.8em 2em;
+        font-size: 1rem;
+    }
+}
+
+.button__body 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button__send 
+{
+    background-color: #1965bd;
+    color: #fff;
+}
+
+.button__reset 
+{
+    background-color:#b81414;
+    color: #fff;
+}
+
+@media (min-width:760px)
+{
+    .contacts__body 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
